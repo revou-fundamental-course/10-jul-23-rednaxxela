@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+          <h1>Kalkulator BMI</h1>
+          <h5>(body mass index)</h5>
+          <div class="desc">
+            <p>Berat badan ideal adalah impian bagi sebagian individu. Hitung berat badan ideal ada menggunakan kalkulator BMI ini !!!</p>
+          </div>
+          
+          <div class="content">
+
+
+          
+
+            <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Laki-laki</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Perempuan</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="input">
+              <label for="height">Usia (tahun)</label>
+              <input type="text" class="text-input" id="age" autocomplete="off" required/>
+          </div>
+
+          
+            <div class="inputW">
+              <label for="weight">Berat (KG)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+          
+            <div class="inputH">
+              <label for="height">Tinggi (CM)</label>
+              <input type="number" id="height" required>
+            </div>
+          
+
+          <div>
+            <button class="calculate" id="submit" onclick="calculate();">Hitung BMI Saya!</button>
+          </div>
+          <div class="result">
+            <p>BMI anda adalah</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+          
+        
+      
+
+        </div>
+      </div>
+
+      <div class="footer"><a class="footer-text" target="_blank">by : Abid Triasa RevoU Fundamental Course SE</a></div>
+
+
+      
+    
+     <div id="myModal" class="modal">
+ 
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+
+
+    
+<script src="script.js"></script>
+
+</body>
+</html>
